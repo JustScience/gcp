@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { LogoWrap, LogoText } from './style.js'
+import { LogoWrap, LogoIcon, LogoText } from './style.js'
 
 export default function HeaderLogo() {
     return (
-        <LogoWrap>
-            <Link to="/">
+        <Link to="/">
+            <LogoWrap>
+                <LogoIcon />
                 <LogoText>Galenti Consulting</LogoText>
-            </Link>
-        </LogoWrap>
+            </LogoWrap>
+        </Link>
     )
 }
