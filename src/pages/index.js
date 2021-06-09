@@ -1,12 +1,21 @@
 import * as React from "react"
-import Layout from '../components'
+import GlobalStyle from '../components/GlobalStyle'
+import Layout from '../components/Layout'
+import Contain from '../components/Contain'
+
 
 // markup
 const IndexPage = () => {
   return (
-    <Layout>
-      <h1>Galenti Consulting</h1>
-    </Layout>
+    <>
+      <GlobalStyle />
+      <Layout>
+        <Contain>
+          <h1>Galenti Design Consulting</h1>
+          <p>Professional Branding and UX Design Consulting for Startups and Enterprise</p>
+        </Contain>
+      </Layout>
+    </>
   )
 }
 
