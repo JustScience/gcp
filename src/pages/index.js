@@ -3,7 +3,8 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import Contain from '../components/Contain'
 import Hero from '../components/Hero'
-
+import ProjectsGallery from "../components/Gallery"
+import { SectionTitle } from '../components/Text/style'
 
 // markup
 const IndexPage = () => {
@@ -30,8 +31,10 @@ const IndexPage = () => {
         </script>
       </Helmet>
       <Layout>
+        <Hero />
         <Contain>
-          <Hero />
+          <SectionTitle>Featured Content</SectionTitle>
+          <ProjectsGallery />
         </Contain>
       </Layout>
     </>

@@ -23,6 +23,7 @@ module.exports = {
         trackingId: process.env.GA_TRACKING_ID,
       },
     },
+    `gatsby-plugin-gatsby-cloud`,
     "gatsby-plugin-image",
     {
       resolve: `gatsby-plugin-sharp`,

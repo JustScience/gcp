@@ -8,7 +8,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 export default function ProjectDetails({ data }) {
     const { body } = data.mdx
-    const { title, stack, featureImg } = data.mdx.frontmatter
+    const { title, role, category, stack, featureImg } = data.mdx.frontmatter
     const image = getImage(featureImg)
 
     return (
@@ -21,6 +21,8 @@ export default function ProjectDetails({ data }) {
             <Layout>
                 <Contain>
                     <h2>{title}</h2>
+                    <h4>{role}</h4>
+                    <p>{category}</p>
                     <p>{stack}</p>
                     <GatsbyImage image={image} alt="Featured Image" />
                     <MDXRenderer>{body}</MDXRenderer>
@@ -35,6 +37,8 @@ export const query = graphql`
         mdx(frontmatter: {slug: {eq: $slug}}) {
             frontmatter {
                 title
+                role
+                category
                 stack
                 featureImg {
                     childImageSharp {

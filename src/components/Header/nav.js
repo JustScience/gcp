@@ -1,12 +1,17 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { NavWrap, NavItem } from './style.js'
+import color from './../Theme/Color'
+
+const activeStyle = {
+    background: color.grey.offWhite, 
+    boxShadow: "0 4px 9px -6px" + color.shadow.base,
+}
 
 export default function HeaderNav() {
     return (
         <NavWrap>
-            <Link to="/projects"><NavItem>Projects</NavItem></Link>
-            <Link to="/founder"><NavItem>Founder</NavItem></Link>
+            <NavItem to="/projects" activeStyle={activeStyle}>Projects</NavItem>
+            <NavItem to="/founder" activeStyle={activeStyle}>Founder</NavItem>
         </NavWrap>
     )
 }

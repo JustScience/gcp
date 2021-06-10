@@ -1,4 +1,6 @@
+import { Link as GatsbyLink } from 'gatsby'
 import styled from 'styled-components'
+import color from './../Theme/Color'
 
 const HeaderWrap = styled.main`
     align-items: center;
@@ -31,13 +33,21 @@ const NavWrap = styled.nav`
     flex-direction: row;
     justify-content: flex-start;
 `
-const NavItem = styled.span`
-    color: darkslateblue;
+const NavItem = styled(GatsbyLink)`
+    border: solid 1px transparent;
+    border-radius: 12px;
+    color: ${color.primary.base};
     font-size: 0.9em;
+    margin-left: 4px;
     padding: 8px 12px;
-    transition: color 333ms ease-in;
+    transition: all 333ms ease-in;
 
-    &:hover {color: slateblue;}
+    &:hover {
+        background-color: ${color.grey.offWhite};
+        /* border-color: ${color.primary.light}; */
+        box-shadow: 0 4px 9px -6px ${color.shadow.base};
+        color: ${color.primary.light};
+    }
 `
 
 export { HeaderWrap, LogoWrap, NavWrap, NavItem, LogoIcon, LogoText }

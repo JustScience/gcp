@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
-
-const textColor = "#222"
+import color from './Theme/Color'
+import text from './Theme/Typography'
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -11,10 +11,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     html,body {
-        background-color: #e3e3e3;
-        color: ${textColor};
-        font-family: 'Baloo Tammudu 2', -apple-system, Arial, Helvetica, sans-serif, sans-serif;
+        background-color: ${color.grey.light};
+        color: ${text.color.default};
+        font-family: -apple-system, Arial, Helvetica, sans-serif;
         font-size: 1em;
+        font-weight:300;
         height: 100%;
         letter-spacing: 0.1em;
         min-height: 100%;
@@ -25,12 +26,11 @@ const GlobalStyle = createGlobalStyle`
         min-width: 100vw;
     }
 
-    a,
-    a:visited,
-    a:any-link {
-        color: ${textColor};
-        text-decoration: none;
-    }
+    a:any-link {text-decoration:none;}
+    button {border:none;outline:none;}
+
+    h1,h2,h3,h4,h5,h6 {font-weight:600;line-height:120%;}
+    p {font-weight:300;line-height:120%;}
 `
 
 export default GlobalStyle

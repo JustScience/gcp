@@ -4,11 +4,9 @@ import { HeroWrap, HeroBigText, HeroHeading, HeroCopyText } from './style'
 export default function Hero() {
     return (
         <HeroWrap>
-            <div>
-                <HeroBigText>HELLO</HeroBigText>
-                <HeroHeading>UX &amp; Brand Design Consulting</HeroHeading>
-                <HeroCopyText>Elegant design for complex customer experiences</HeroCopyText>
-            </div>
+            <HeroBigText>GC</HeroBigText>
+            <HeroHeading>UX &amp; Brand Design Consulting</HeroHeading>
+            <HeroCopyText>Elegant design for complex customer experiences</HeroCopyText>
         </HeroWrap>
     )
 }
