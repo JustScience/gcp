@@ -7,9 +7,11 @@ module.exports = {
     title: "Design Leadership Consultant | DesignOps Consulting",
     titleTemplate: ' | Design Consulting',
     description: "DesignOps and UX Strategy Consultant. Design Operations Consulting.",
+    keywords: "UX Design Consultant Branding",
     copyright: "Copyright 2021, Galenti Consulting, LLC. All rights reserved.",
+    author: "J Galenti",
     contact: "galenticonsulting@gmail.com",
-    url: "https://galenti.io", // No trailing slash allowed!
+    siteUrl: "https://galenti.io", // No trailing slash allowed!
     image: "/images/socialThumb.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@jgalenti",
   },

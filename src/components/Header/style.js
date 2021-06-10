@@ -32,8 +32,12 @@ const NavWrap = styled.nav`
     justify-content: flex-start;
 `
 const NavItem = styled.span`
+    color: darkslateblue;
     font-size: 0.9em;
     padding: 8px 12px;
+    transition: color 333ms ease-in;
+
+    &:hover {color: slateblue;}
 `
 
 export { HeaderWrap, LogoWrap, NavWrap, NavItem, LogoIcon, LogoText }

@@ -6,7 +6,7 @@ export default function HeaderNav() {
     return (
         <NavWrap>
             <Link to="/projects"><NavItem>Projects</NavItem></Link>
-            <Link to="/"><NavItem>Home</NavItem></Link>
+            <Link to="/founder"><NavItem>Founder</NavItem></Link>
         </NavWrap>
     )
 }

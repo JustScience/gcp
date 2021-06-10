@@ -9,11 +9,23 @@ const HeroWrap = styled.section`
     padding: 24px;
     width: 100%;
 `
-const HeroText = styled.span`
-    color: #e3e3e3;
+const HeroBigText = styled.span`
+    color: #ebebeb;
     font-size: 9em;
     font-weight: 700;
-    text-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    text-shadow: 0 3px 12px rgba(30,0,90,0.15);
+`
+const HeroHeading = styled.h1`
+    color: darkslateblue;
+    font-weight: 500;
+    margin-bottom: 6px;
+    text-align: center;
+`
+const HeroCopyText = styled.p`
+    color: slateblue;
+    font-weight: 300;
+    text-align: center;
 `
 
-export { HeroWrap, HeroText }
+export { HeroWrap, HeroBigText, HeroHeading, HeroCopyText }

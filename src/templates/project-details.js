@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from '../components/Layout'
@@ -11,14 +12,21 @@ export default function ProjectDetails({ data }) {
     const image = getImage(featureImg)
 
     return (
-        <Layout>
-            <Contain>
-                <h2>{title}</h2>
-                <p>{stack}</p>
-                <GatsbyImage image={image} alt="Featured Image" />
-                <MDXRenderer>{body}</MDXRenderer>
-            </Contain>
-        </Layout>
+        <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>{title} | Web Design Consulting | J Galenti</title>
+                <link rel="canonical" href="http://galenti.io" />
+            </Helmet>
+            <Layout>
+                <Contain>
+                    <h2>{title}</h2>
+                    <p>{stack}</p>
+                    <GatsbyImage image={image} alt="Featured Image" />
+                    <MDXRenderer>{body}</MDXRenderer>
+                </Contain>
+            </Layout>
+        </>
     )
 }
 
