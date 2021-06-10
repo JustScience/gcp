@@ -2,6 +2,7 @@ import * as React from "react"
 import GlobalStyle from '../components/GlobalStyle'
 import Layout from '../components/Layout'
 import Contain from '../components/Contain'
+import Hero from '../components/Hero'
 
 
 // markup
@@ -11,8 +12,7 @@ const IndexPage = () => {
       <GlobalStyle />
       <Layout>
         <Contain>
-          <h1>Galenti Design Consulting</h1>
-          <p>Professional Branding and UX Design Consulting for Startups and Enterprise</p>
+          <Hero />
         </Contain>
       </Layout>
     </>

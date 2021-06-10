@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     html,body {
+        background-color: #e3e3e3;
         color: ${textColor};
         font-family: 'Baloo Tammudu 2', -apple-system, Arial, Helvetica, sans-serif, sans-serif;
         font-size: 1em;

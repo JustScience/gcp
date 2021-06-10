@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 const HeaderWrap = styled.main`
     align-items: center;
-    background-color: beige;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
