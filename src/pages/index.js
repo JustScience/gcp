@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import Contain from '../components/Contain'
 import Hero from '../components/Hero'
 import ProjectsGallery from "../components/Gallery"
-import { SectionTitle } from '../components/Text/style'
+// import { SectionTitle } from '../components/Text/style'
 
 // markup
 const IndexPage = () => {
@@ -33,7 +33,7 @@ const IndexPage = () => {
       <Layout>
         <Hero />
         <Contain>
-          <SectionTitle>Featured Content</SectionTitle>
+          {/* <SectionTitle>Featured Content</SectionTitle> */}
           <ProjectsGallery />
         </Contain>
       </Layout>

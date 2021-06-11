@@ -2,30 +2,48 @@ import { Link as GatsbyLink } from 'gatsby'
 import styled from 'styled-components'
 import color from './../Theme/Color'
 
-const HeaderWrap = styled.main`
+const HeaderWrap = styled.nav`
     align-items: center;
+    background-color: rgba(225,225,225,0.6);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 9px -6px ${color.shadow.base};
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
     padding: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    z-index: 9999;
 `
-const LogoWrap = styled.nav`
+const LogoWrap = styled.div`
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 `
-const LogoIcon = styled.div`
-    border: solid 2px #222;
-    border-radius: 50%;
-    height: 24px;
+const LogoIcon = styled.span`
+    /* border: solid 2px #222;
+    border-radius: 50%; */
+    color: ${color.grey.offWhite};
+    font-size: 2.1em;
+    font-weight: 700;
+    /* height: 24px; */
     margin-right: 10px;
-    width: 24px;
+    text-shadow: 0 1px 3px ${color.shadow.light};
+    transition: 333ms ease-in;
+    /* width: 24px; */
+
+    /* &:hover {
+        color: ${color.accent.base};
+    } */
 `
 const LogoText = styled.span`
-    font-size: 1.2em;
+    color: ${color.grey.medium};
+    font-size: .84em;
 `
 const NavWrap = styled.nav`
     align-items: center;

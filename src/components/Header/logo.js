@@ -6,7 +6,7 @@ export default function HeaderLogo() {
     return (
         <Link to="/">
             <LogoWrap>
-                <LogoIcon />
+                <LogoIcon>GC</LogoIcon>
                 <LogoText>Galenti Consulting</LogoText>
             </LogoWrap>
         </Link>
