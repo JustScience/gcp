@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 export default function ProjectsGallery() {
     const data = useStaticQuery(graphql`
         query ProjectsList {
-            allMdx {
+            allMdx(filter: {frontmatter: {type: {eq: "project"}}}) {
                 nodes {
                     frontmatter {
                         category

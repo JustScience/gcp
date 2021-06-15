@@ -1,11 +1,11 @@
 import * as React from "react"
 import { Helmet } from 'react-helmet'
-import Layout from '../components/Layout'
-import Contain from '../components/Contain'
-
+import Layout from '../../components/Layout'
+import Contain from '../../components/Contain'
+import ResumeJobs from '../../components/Resume'
 
 // markup
-const FounderPage = () => {
+const HistoryPage = () => {
     return (
         <>
             <Helmet>
@@ -31,10 +31,11 @@ const FounderPage = () => {
             <Layout>
                 <Contain>
                     <h1>J Galenti</h1>
+                    <ResumeJobs />
                 </Contain>
             </Layout>
         </>
     )
 }
 
-export default FounderPage
+export default HistoryPage

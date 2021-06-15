@@ -42,7 +42,7 @@ const LogoIcon = styled.span`
     } */
 `
 const LogoText = styled.span`
-    color: ${color.grey.medium};
+    color: ${color.primary.base};
     font-size: .84em;
 `
 const NavWrap = styled.nav`

@@ -10,7 +10,7 @@ const HeroWrap = styled.section`
     justify-content: center;
     margin: 0;
     padding: 24px;
-    padding-top: 81px;
+    padding-top: 21px;
     width: 100%;
 `
 const HeroBigText = styled.span`

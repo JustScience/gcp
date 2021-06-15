@@ -11,7 +11,7 @@ export default function HeaderNav() {
     return (
         <NavWrap>
             <NavItem to="/projects" activeStyle={activeStyle}>Projects</NavItem>
-            <NavItem to="/founder" activeStyle={activeStyle}>Founder</NavItem>
+            <NavItem to="/history" activeStyle={activeStyle}>History</NavItem>
         </NavWrap>
     )
 }

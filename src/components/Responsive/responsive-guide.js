@@ -4,7 +4,9 @@ import media from "./media";
 
 const ResponsiveGuide = styled.div`
   &:after {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
     bottom: 9px;
     color: #ffffff;
     font-size: 120%;
@@ -12,7 +14,7 @@ const ResponsiveGuide = styled.div`
     left: 9px;
     line-height: 100%;
     z-index: 99999;
-    padding: 9px;
+    padding: 9px 18px;
     position: fixed;
     visibility: visible;
 

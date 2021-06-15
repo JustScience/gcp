@@ -7,7 +7,7 @@ const color = {
         base: "#bada55",
     },
     grey: {
-        offWhite: "#ebebeb",
+        offWhite: "#f3f3f3",
         light: "#e3e3e3",
         medium: "#6b6b6b",
     },

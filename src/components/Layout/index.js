@@ -1,8 +1,8 @@
 import React from 'react'
-import GlobalStyle from '../GlobalStyle'
+import GlobalStyle from '../Theme/Global'
 import Header from '../Header'
-import LayoutWrap from './style'
 import Responsive from '../Responsive'
+import LayoutWrap from './style'
 
 export default function Layout({ children }) {
     return (
