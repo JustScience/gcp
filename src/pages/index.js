@@ -33,8 +33,7 @@ const IndexPage = () => {
       <Layout>
         <Hero />
         <Contain>
-          {/* <SectionTitle>Featured Content</SectionTitle> */}
-          <ProjectsGallery />
+          <p>This page is under construction. In the mean time please visit my <a href="https://jgalenti.myportfolio.com/">temporary portfolio</a>.</p>
         </Contain>
       </Layout>
     </>
