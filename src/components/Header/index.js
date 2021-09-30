@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <HeaderWrap>
             <HeaderLogo />
-            <HeaderNav />
+
         </HeaderWrap>
     )
 }
