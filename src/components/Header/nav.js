@@ -10,8 +10,8 @@ const activeStyle = {
 export default function HeaderNav() {
     return (
         <NavWrap>
-            <NavItem to="/projects" activeStyle={activeStyle}>Projects</NavItem>
-            <NavItem to="/history" activeStyle={activeStyle}>History</NavItem>
+            <NavItem to="https://jgalenti.myportfolio.com/" activeStyle={activeStyle}>Temp Portfolio</NavItem>
+
         </NavWrap>
     )
 }
